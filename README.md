@@ -64,8 +64,16 @@ khayal/
 ## To fill in before publishing
 
 - The owner name in `marketplace.json` and `author` in both manifests (currently a placeholder or empty).
-- The `repository` field and a license (there is no LICENSE file yet).
+- The `repository` field in the Antigravity manifest (already set in the Claude Code manifest).
 - A logo, if you want to list it on the Antigravity marketplace.
+
+## Contributing
+
+Issues and pull requests are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) and the [Code of Conduct](CODE_OF_CONDUCT.md) first.
+
+## License
+
+[MIT](LICENSE).
 
 ## Where the content comes from
 
