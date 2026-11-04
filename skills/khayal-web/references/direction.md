@@ -12,14 +12,16 @@ If a `BRIEF.md` exists (from `khayal-brief`), read it first and build on it. Do 
 
 ## Steps
 
-1. Collect: product, audience, one primary action, the most distinctive thing, and the mood. One deciding question is enough if something is missing.
-2. Find the visual source in the product itself: a material, culture, object, place, or way of working. Example: a page about corrections uses exam paper, ballpoint ink, and a teacher's red pen. "Modern and clean" is not a concept.
-3. Offer three directions that differ strongly (not three color variations), each with a concept, palette, fonts, and lead element.
+1. Collect: product, audience, one primary action, the most distinctive thing, and the mood. One deciding question is enough if something is missing. Also read the chosen format (2D, 3D, or hybrid, see `web-type.md`) and `REFERENCES.md` if research has been done.
+2. Find the visual source in the product itself: a material, culture, object, place, or way of working. Example: a page about corrections uses exam paper, ballpoint ink, and a teacher's red pen. "Modern and clean" is not a concept. References from research inform this step but do not replace it.
+3. Offer three directions that differ strongly (not three color variations), each with a concept, palette, fonts, lead element, and where the 2D or 3D weight sits.
 4. After the user picks one, write `DESIGN.md` with the structure below.
 
 ## DESIGN.md structure
 
 - **Design Read:** one sentence. "A [kind of page] for [audience], in a [visual language] style."
+- **Format:** 2D, 3D, or hybrid, and the purpose (landing page, showcase, story, product site). For 3D or hybrid add the scene concept (what it shows and why), the fallback when WebGL is unavailable, and the load budget.
+- **References:** the entries from `REFERENCES.md` that shaped this direction, each with the one pattern borrowed. Omit if no research was done.
 - **Dials:** ENERGY, RHYTHM, and MOTION, each 1 (calm), 2 (balanced), or 3 (bold). ENERGY is how loudly the page greets the visitor, RHYTHM is how much sections differ from each other, MOTION is how much movement there is. The output must stay consistent with the declared dials.
 - **Concept** and the reason for it.
 - **Lead element:** the one thing seen first, and why.
