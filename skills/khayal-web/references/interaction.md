@@ -1,9 +1,4 @@
----
-name: khayal-interaction
-description: Designs and builds purposeful website interaction: a main interactive moment, scroll-driven effects, animation, cursor effects, GSAP, ScrollTrigger, Three.js, with accessibility rules, performance rules, and a test checklist. Use when the user asks for an interactive website, animation, scrollytelling, or effects that feel alive without being gimmicks. Also triggers on Indonesian requests such as "bikin web interaktif" or "tambahkan animasi".
----
-
-# khayal-interaction
+# Purposeful interaction
 
 Good interaction explains something. Bad interaction only fills the page.
 

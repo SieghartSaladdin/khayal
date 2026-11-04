@@ -1,9 +1,4 @@
----
-name: khayal-copy
-description: Writes or edits website text (headlines, subheads, buttons, feature descriptions, microcopy) so it is specific, honest, and does not read like AI writing. Works in Indonesian and English. Use when writing landing page copy, CTAs, or headlines, or when cleaning up text that feels generic. Also triggers on Indonesian requests such as "tulis copy website" or "rapikan teks yang terasa generik".
----
-
-# khayal-copy
+# Website copy
 
 Good copy says what the product does, for whom, and the evidence. Bad copy could be pasted onto any product.
 

@@ -2,9 +2,9 @@
   "$schema": "https://antigravity.google/schemas/v1/plugin.json",
   "name": "khayal",
   "displayName": "Khayal",
-  "version": "0.2.0",
-  "description": "Turn a user's imagination into a distinctive, interactive website that does not look like generic AI output. Skills for brief, design direction, web building, interaction, audit, and copy. Video skill planned.",
-  "keywords": ["anti-slop", "frontend", "web-design", "interactive", "brief", "audit", "copywriting"],
+  "version": "0.3.0",
+  "description": "Turn a user's imagination into a distinctive, interactive website that does not look like generic AI output. Three skills: guide, brief, and web building. Video skill planned.",
+  "keywords": ["anti-slop", "frontend", "web-design", "interactive", "brief", "guide"],
   "suggestedPrompts": [
     "I have an idea for a website, help me turn it into a brief",
     "Audit this page for signs of generic AI design",

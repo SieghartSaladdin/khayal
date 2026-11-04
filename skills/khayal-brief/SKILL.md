@@ -61,4 +61,4 @@ Do not choose for the user. Wait for them to pick one, or to mix parts of two.
 
 ## Handoff
 
-After the user chooses, pass the brief and the chosen direction to `khayal-direction`, which writes `DESIGN.md` for the whole project. For a website, continue with `khayal-web`. This plugin does not yet include a video skill. If a video is wanted, record it in the brief and tell the user that `DESIGN.md` is written so a video tool (for example Remotion, which uses the same React and CSS) can reuse the same colors, fonts, and motion language.
+After the user chooses, continue with `khayal-web`, which turns the brief and the chosen direction into `DESIGN.md` for the whole project and then builds the website. This plugin does not yet include a video skill. If a video is wanted, record it in the brief and tell the user that `DESIGN.md` is written so a video tool (for example Remotion, which uses the same React and CSS) can reuse the same colors, fonts, and motion language.

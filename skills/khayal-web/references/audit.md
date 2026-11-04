@@ -1,9 +1,4 @@
----
-name: khayal-audit
-description: Audits an existing web page or its code against the signs of generic "AI slop" and produces a numbered, prioritized findings list, then fixes only the numbers the user approves. Use when asked to audit, review a design, check whether a page looks AI-made, or fix a generic-looking design. Also triggers on Indonesian requests such as "audit halaman ini" or "cek apakah desain ini terlihat buatan AI".
----
-
-# khayal-audit
+# Auditing a page for AI slop
 
 A single tell on its own is usually fine. What makes a page feel like slop is a cluster of tells with no reason behind them. Look for clusters, then test each tell with one question: what does this choice serve?
 
@@ -13,7 +8,7 @@ Reply in the user's language.
 
 1. Read `DESIGN.md` if it exists. Without it, say the audit uses general standards, not the project's own.
 2. Look at the real page (open it in a browser and take a screenshot) as well as the code, when possible. Many problems only show when the page runs.
-3. Check the page against `references/tanda-slop.md`.
+3. Check the page against `tanda-slop.md` (in this folder).
 4. Write a numbered findings list. Each finding has: the tell, the evidence (location or a short quote), why it is a problem, and the fix.
 5. **Change nothing** until the user names the numbers to fix. Numbers not mentioned are not touched.
 6. Fix the approved numbers, re-run the page, and report the result.

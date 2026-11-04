@@ -1,9 +1,4 @@
----
-name: khayal-direction
-description: Writes the design direction (DESIGN.md) for a website or video before any code or footage is made: concept, palette, typography, lead element, rhythm, motion, and bans, each with a reason. Use when starting a new web or video project, when a design feels generic, or when the user asks for a design direction, brand direction, or three design options. Also triggers on Indonesian requests such as "tulis arah desain" or "kasih tiga opsi desain".
----
-
-# khayal-direction
+# Design direction (DESIGN.md)
 
 The result of this skill is one `DESIGN.md` file that every output in the project shares, so the website and any video look like one brand. Without it, the model fills the gaps with the average of every tutorial.
 
