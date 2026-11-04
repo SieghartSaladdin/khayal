@@ -1,0 +1,15 @@
+{
+  "name": "khayal-marketplace",
+  "description": "Marketplace for the Khayal plugin.",
+  "owner": {
+    "name": "Fafnir"
+  },
+  "plugins": [
+    {
+      "name": "khayal",
+      "source": "./",
+      "version": "0.2.0",
+      "description": "Turn a user's imagination into a distinctive, interactive website that does not look like generic AI output."
+    }
+  ]
+}

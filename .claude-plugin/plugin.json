@@ -1,0 +1,8 @@
+{
+  "name": "khayal",
+  "displayName": "Khayal",
+  "version": "0.2.0",
+  "description": "Turn a user's imagination into a distinctive, interactive website that does not look like generic AI output. Skills for brief, design direction, web building, interaction, audit, and copy. Video skill planned.",
+  "keywords": ["anti-slop", "frontend", "web-design", "interactive", "brief", "audit", "copywriting"],
+  "skills": ["./skills/"]
+}
