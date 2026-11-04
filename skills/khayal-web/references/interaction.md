@@ -16,7 +16,7 @@ Reply in the user's language.
 
 - Start with plain HTML, CSS, and JS. State stack limits at the start.
 - GSAP with ScrollTrigger for scroll-linked animation: `scrub` ties progress to scroll position (a number adds smoothing lag), `pin` holds an element for a range of scroll.
-- Three.js only if 3D is genuinely the content. GSAP can drive Three.js object properties through `onUpdate`.
+- Three.js when the user chose 3D or hybrid (see `web-type.md` for the fit test and the rules on fallback, load budget, and frame rate). GSAP can drive Three.js object properties through `onUpdate`.
 - Smooth scroll (for example Lenis) is optional and must stay keyboard navigable.
 - Animate `transform` and `opacity` only. Drive cursor effects with `requestAnimationFrame` and disable them on touch devices.
 

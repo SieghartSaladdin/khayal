@@ -13,6 +13,7 @@ Reply in the user's language. Keep answers short and ask at most one question at
 
 - `khayal-brief`: draws a vague idea out of the user's head and writes it down as `BRIEF.md`, then offers three design directions.
 - `khayal-web`: builds the website. It writes `DESIGN.md` from the brief, builds the page, adds interaction and copy, audits its own work, and tests it in a browser.
+- `khayal-bench`: benchmarks which web techniques (CSS/GSAP, SVG, shaders, Three.js, and more) Khayal can build well, at low, mid, and high difficulty. The user picks what to test and judges the result.
 - `khayal-guide`: this skill.
 
 `khayal-web` keeps its detailed guidance in reference files (design direction, interaction, copy, audit, slop tells, prompt template) and loads them when needed. They are not separate skills.

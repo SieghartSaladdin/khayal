@@ -2,7 +2,7 @@
   "name": "khayal",
   "displayName": "Khayal",
   "version": "0.3.0",
-  "description": "Turn a user's imagination into a distinctive, interactive website that does not look like generic AI output. Three skills: guide, brief, and web building. Video skill planned.",
+  "description": "Turn a user's imagination into a distinctive, interactive website that does not look like generic AI output. Four skills: guide, brief, web building, and a technique benchmark. Video skill planned.",
   "keywords": ["anti-slop", "frontend", "web-design", "interactive", "brief", "guide"],
   "skills": ["./skills/"]
 }

@@ -2,18 +2,23 @@
 
 Plugin skill untuk mengubah imajinasi pengguna menjadi website (dan nanti video) yang tidak terasa buatan AI, dengan satu arah desain yang dipakai bersama. Berjalan di Claude Code dan Antigravity dengan skill yang sama. Isi skill ditulis dalam bahasa Inggris (supaya instruksi ke model akurat), dan skill menjawab dalam bahasa pengguna.
 
-## Skill (3)
+## Skill (4)
 
 - `khayal-guide`: pintu masuk. Menjelaskan apa yang bisa dilakukan Khayal dan mengarahkan ke skill yang tepat.
 - `khayal-brief`: menggali ide yang masih kabur menjadi `BRIEF.md`, lalu menawarkan tiga arah desain.
-- `khayal-web`: alur utama membangun website, dari `DESIGN.md` sampai uji di browser. Panduan rincinya ada di `skills/khayal-web/references/`:
+- `khayal-web`: alur utama membangun website 2D, 3D, atau hybrid. Pengguna berimajinasi dulu, lalu memilih jenis web, lalu Claude meriset pemenang Awwwards dan kompetitor, menawarkan tiga arah, dan baru membangun sampai uji di browser. Panduan rincinya ada di `skills/khayal-web/references/`:
+  - `web-type.md`: memilih 2D, 3D, atau hybrid, dan aturan 3D (fallback, beban, frame rate)
+  - `research.md`: riset Awwwards dan kompetitor, format `REFERENCES.md`
+  - `landing-page.md`: langkah tambahan untuk halaman konversi
   - `direction.md`: cara menulis `DESIGN.md`
   - `interaction.md`: interaksi yang punya tujuan, aksesibilitas, daftar uji
   - `copy.md`: copy yang spesifik dan jujur
   - `audit.md` dan `tanda-slop.md`: audit halaman terhadap tanda "AI slop"
   - `template-prompt.md`: template prompt
 
-Rujukan di atas bukan skill terpisah. Belum ada: skill video (rencana: Remotion, memakai warna, font, dan bahasa gerak dari `DESIGN.md`).
+- `khayal-bench`: benchmark teknik web (CSS+GSAP, SVG, shader, Three.js, CSS 3D, Lottie/Rive/Spline, dan lainnya) dengan tiga tingkat low, mid, high. Pengguna memilih ID yang diuji, Claude membangun dan mengukur di Chrome asli, pengguna yang menilai tampilannya. Katalog ada di `skills/khayal-bench/references/catalog.md`.
+
+Rujukan di bawah `khayal-web` bukan skill terpisah. Belum ada: skill video (rencana: Remotion, memakai warna, font, dan bahasa gerak dari `DESIGN.md`).
 
 ## Instal di Claude Code
 
@@ -53,6 +58,8 @@ khayal/
   skills/khayal-brief/SKILL.md
   skills/khayal-web/SKILL.md
   skills/khayal-web/references/      panduan rinci yang dimuat bila perlu
+  skills/khayal-bench/SKILL.md
+  skills/khayal-bench/references/    katalog, cara ukur, lembar review
 ```
 
 ## Yang perlu kamu isi sebelum dipublikasikan
