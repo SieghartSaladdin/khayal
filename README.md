@@ -1,43 +1,42 @@
 # Khayal
 
-Plugin skill untuk mengubah imajinasi pengguna menjadi website (dan nanti video) yang tidak terasa buatan AI, dengan satu arah desain yang dipakai bersama. Berjalan di Claude Code dan Antigravity dengan skill yang sama. Isi skill ditulis dalam bahasa Inggris (supaya instruksi ke model akurat), dan skill menjawab dalam bahasa pengguna.
+A skill plugin that turns a user's imagination into a website (and later a video) that does not look AI-made, with one shared design direction. It runs on Claude Code and Antigravity with the same skills. The skill files are written in English so instructions to the model stay accurate, and the skills reply in the user's language.
 
-## Skill (4)
+## Skills (4)
 
-- `khayal-guide`: pintu masuk. Menjelaskan apa yang bisa dilakukan Khayal dan mengarahkan ke skill yang tepat.
-- `khayal-brief`: menggali ide yang masih kabur menjadi `BRIEF.md`, lalu menawarkan tiga arah desain.
-- `khayal-web`: alur utama membangun website 2D, 3D, atau hybrid. Pengguna berimajinasi dulu, lalu memilih jenis web, lalu Claude meriset pemenang Awwwards dan kompetitor, menawarkan tiga arah, dan baru membangun sampai uji di browser. Panduan rincinya ada di `skills/khayal-web/references/`:
-  - `web-type.md`: memilih 2D, 3D, atau hybrid, dan aturan 3D (fallback, beban, frame rate)
-  - `research.md`: riset Awwwards dan kompetitor, format `REFERENCES.md`
-  - `landing-page.md`: langkah tambahan untuk halaman konversi
-  - `direction.md`: cara menulis `DESIGN.md`
-  - `interaction.md`: interaksi yang punya tujuan, aksesibilitas, daftar uji
-  - `copy.md`: copy yang spesifik dan jujur
-  - `audit.md` dan `tanda-slop.md`: audit halaman terhadap tanda "AI slop"
-  - `template-prompt.md`: template prompt
+- `khayal-guide`: the front door. Explains what Khayal can do and points to the right skill.
+- `khayal-brief`: draws a vague idea out into a `BRIEF.md`, then offers three design directions.
+- `khayal-web`: the main workflow for building a 2D, 3D, or hybrid website. The user imagines first and chooses the kind of site, then Claude researches Awwwards winners and competitors, offers three directions, and only then builds, through to testing in a browser. Detailed guidance lives in `skills/khayal-web/references/`:
+  - `web-type.md`: choosing 2D, 3D, or hybrid, and the rules for 3D (fallback, load budget, frame rate)
+  - `research.md`: researching Awwwards winners and competitors, and the `REFERENCES.md` format
+  - `landing-page.md`: extra steps for conversion pages
+  - `direction.md`: how to write `DESIGN.md`
+  - `interaction.md`: purposeful interaction, accessibility, test checklist
+  - `copy.md`: specific, honest copy
+  - `audit.md` and `tanda-slop.md`: auditing a page against the signs of "AI slop"
+  - `template-prompt.md`: prompt templates
+- `khayal-bench`: benchmarks web techniques (CSS + GSAP, SVG, shaders, Three.js, CSS 3D, Lottie/Rive/Spline, and more) at three levels: low, mid, and high. The user picks which IDs to test, Claude builds them and measures them in a real Chrome, and the user judges how they look. The catalog is in `skills/khayal-bench/references/catalog.md`.
 
-- `khayal-bench`: benchmark teknik web (CSS+GSAP, SVG, shader, Three.js, CSS 3D, Lottie/Rive/Spline, dan lainnya) dengan tiga tingkat low, mid, high. Pengguna memilih ID yang diuji, Claude membangun dan mengukur di Chrome asli, pengguna yang menilai tampilannya. Katalog ada di `skills/khayal-bench/references/catalog.md`.
+The references under `khayal-web` are not separate skills. Not yet built: a video skill (planned: Remotion, using the colors, fonts, and motion language from `DESIGN.md`).
 
-Rujukan di bawah `khayal-web` bukan skill terpisah. Belum ada: skill video (rencana: Remotion, memakai warna, font, dan bahasa gerak dari `DESIGN.md`).
+## Install on Claude Code
 
-## Instal di Claude Code
-
-Coba tanpa menginstal:
+Try it without installing:
 
 ```bash
 claude --plugin-dir ./khayal
 ```
 
-Instal lewat marketplace lokal atau repositori Git:
+Install through a local marketplace or a Git repository:
 
 ```bash
 claude plugin marketplace add ./khayal
 claude plugin install khayal@khayal-marketplace
 ```
 
-Untuk repositori GitHub, ganti `./khayal` dengan `pemilik/nama-repo`.
+For a GitHub repository, replace `./khayal` with `owner/repo-name`.
 
-## Instal di Antigravity
+## Install on Antigravity
 
 ```bash
 agy plugin validate --strict ./khayal
@@ -45,29 +44,29 @@ agy plugin install ./khayal
 agy plugin list
 ```
 
-Antigravity juga bisa memasang dari tautan repositori GitHub.
+Antigravity can also install from a GitHub repository link.
 
-## Struktur
+## Structure
 
 ```
 khayal/
-  .claude-plugin/plugin.json         manifest Claude Code
-  .claude-plugin/marketplace.json    marketplace Claude Code
-  .antigravity-plugin/plugin.json    manifest Antigravity
+  .claude-plugin/plugin.json         Claude Code manifest
+  .claude-plugin/marketplace.json    Claude Code marketplace
+  .antigravity-plugin/plugin.json    Antigravity manifest
   skills/khayal-guide/SKILL.md
   skills/khayal-brief/SKILL.md
   skills/khayal-web/SKILL.md
-  skills/khayal-web/references/      panduan rinci yang dimuat bila perlu
+  skills/khayal-web/references/      detailed guidance, loaded when needed
   skills/khayal-bench/SKILL.md
-  skills/khayal-bench/references/    katalog, cara ukur, lembar review
+  skills/khayal-bench/references/    catalog, how to measure, review sheet
 ```
 
-## Yang perlu kamu isi sebelum dipublikasikan
+## To fill in before publishing
 
-- Nama pemilik di `marketplace.json` dan `author` di kedua manifest (sekarang placeholder atau kosong).
-- Field `repository` dan lisensi (belum ada file LICENSE).
-- Logo, bila ingin masuk marketplace Antigravity.
+- The owner name in `marketplace.json` and `author` in both manifests (currently a placeholder or empty).
+- The `repository` field and a license (there is no LICENSE file yet).
+- A logo, if you want to list it on the Antigravity marketplace.
 
-## Asal isi
+## Where the content comes from
 
-Dirangkum dengan kata sendiri dari riset prompt anti slop: Anthropic Cookbook tentang estetika frontend, artikel capitalandcompute tentang tanda slop, artikel prg.sh tentang kenapa AI membuat desain yang sama, dan praktik aksesibilitas gerak. Konsep tiga dial (ENERGY, RHYTHM, MOTION) terinspirasi dari plugin antislop (MIT). Semuanya opini praktisi dan dokumentasi vendor, bukan standar baku.
+Summarized in our own words from research on anti-slop prompting: the Anthropic Cookbook on frontend aesthetics, the capitalandcompute article on slop tells, the prg.sh article on why AI makes the same design, and motion accessibility practice. The three-dial concept (ENERGY, RHYTHM, MOTION) is inspired by the antislop plugin (MIT). All of it is practitioner opinion and vendor documentation, not an official standard.
