@@ -18,10 +18,13 @@ Format: [2D, 3D, or hybrid] and purpose [landing page, showcase, story, product 
 Stack: [plain HTML/CSS/JS, GSAP, Three.js]. Pin versions: [for example GSAP 3.12.x, Three.js rXXX].
 
 REFERENCES (research first, save as REFERENCES.md)
-Find 3-5 Awwwards winners and competitors for [theme]. Follow each Awwwards entry to its live
+Find 3-5 Awwwards winners and competitors for [theme], mixing ones from my field with
+neutral ones from unrelated fields, picked only for a strong section idea. Follow each Awwwards entry to its live
 site and open the live site. For each, note palette, typography, layout, every section in
 order, motion, the unique element, and the sections worth adapting. Only list sites you
-actually opened, with both the Awwwards URL and the live URL. Use sections from every one.
+actually opened, with both the Awwwards URL and the live URL. Use sections from every one. Take screenshots with your screenshot tool (mandatory), look at
+them, and also record the loader, canvas or 3D, scroll behavior, cursor, and transitions,
+not just the sections.
 Then offer three complete packages in one message (direction, format, and a
 section plan adapted from those references) and wait for my pick.
 

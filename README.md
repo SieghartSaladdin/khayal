@@ -6,7 +6,7 @@ A skill plugin that turns a user's imagination into a website (and later a video
 
 - `khayal-guide`: the front door. Explains what Khayal can do and points to the right skill.
 - `khayal-brief`: lets the user tell a vague idea freely, asks only for what is missing, and writes it into a `BRIEF.md`, then hands over to `khayal-web`.
-- `khayal-web`: the main workflow for building a 2D, 3D, or hybrid website. The user imagines first, then Claude researches Awwwards winners and competitors, offers three complete options in one message, and only then builds, through to testing in a browser. The user touches the process in three places: telling the idea, picking one option, and reviewing the result. Detailed guidance lives in `skills/khayal-web/references/`:
+- `khayal-web`: the main workflow for building a 2D, 3D, or hybrid website. The method is Amati, Tiru, Modifikasi (observe, imitate, modify) plus the user's own imagination: the user imagines first, then Claude researches Awwwards winners and competitors, offers three complete options in one message, and only then builds, through to testing in a browser. The user touches the process in three places: telling the idea, picking one option, and reviewing the result. Detailed guidance lives in `skills/khayal-web/references/`:
   - `web-type.md`: choosing 2D, 3D, or hybrid, and the rules for 3D (fallback, load budget, frame rate)
   - `research.md`: researching Awwwards winners and competitors, and the `REFERENCES.md` format
   - `layout-blueprint.md`: turning researched references into `LAYOUT.md`, a section-by-section plan

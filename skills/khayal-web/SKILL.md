@@ -9,6 +9,8 @@ Models pick the statistically most likely option, which is the average of every 
 
 The user touches the process in three places only: telling the idea, picking one option, and reviewing the result. Everything in between the agent decides and states.
 
+The method is ATM plus the user's imagination: **Amati** (observe real award-level sites, with screenshots), **Tiru** (imitate their design closely), **Modifikasi** (modify it), and blend in the user's **khayal** (their own idea) so the result is theirs. Starting from a close copy and then modifying it is preferred over inventing a layout from nothing.
+
 Reply in the user's language. Write code, file names, `DESIGN.md`, `LAYOUT.md`, and `REFERENCES.md` in English unless the user asks otherwise. Page copy follows the language the site is for.
 
 ## Reference files
@@ -30,13 +32,14 @@ Read these when the step calls for them. They are part of this skill, not separa
 
 Keep questions to a minimum. Ask only when blocked: a fact is missing that cannot be guessed and would change the result (what the product is, what is being sold). Put all such questions in one message. Never ask the user to choose the dimension, the purpose, or the sections one by one.
 
-1. **Imagine.** The user describes the idea freely, in their own words. From it, infer the audience, mood, purpose (landing page, showcase or portfolio, story experience, multi-page product site), and dimension (2D, 3D, or hybrid, see `references/web-type.md`). If the idea is too vague to research (no product or theme at all), ask the missing basics in one message, or run `khayal-brief`. If a clear `BRIEF.md` exists, use it.
-2. **Research, without asking.** Follow `references/research.md`. Find Awwwards winners and competitors that fit the theme, mood, and dimension, and keep three to five. Follow each Awwwards entry to its live site, open the live site in a real browser, record its section map (order, purpose, composition, and motion of every section) with both URLs, and save it in `REFERENCES.md`. A reference that was not opened is not kept. Do not stop to show the user a list of references and wait for reactions.
+1. **Imagine.** The user describes the idea freely, in their own words. From it, infer the audience, mood, purpose (landing page, showcase or portfolio, story experience, multi-page product site), and dimension (2D, 3D, or hybrid, see `references/web-type.md`). If the idea is too vague to research (no product or theme at all), ask the missing basics in one message, or run `khayal-brief`. If a clear `BRIEF.md` exists, use it. In one line, tell the user which screenshot depth you will use for the research (Standard by default; they can ask for quick, specific parts, or full detail), then start without waiting.
+2. **Research, without asking.** Follow `references/research.md`. Find Awwwards winners (some matching the theme, mood, and dimension, some neutral from unrelated fields) and competitors, and keep three to five as a deliberate mix: at least one relevant to the user's field and at least one neutral reference picked only for a strong section idea. Not every reference has to match the brief. Follow each Awwwards entry to its live site, open the live site in a real browser, record its section map (order, purpose, composition, and motion of every section) with both URLs, and save it in `REFERENCES.md`. Screenshots are mandatory: use your screenshot tool, save the files, and look at them before writing anything about a site. Also record its signature elements (loader, canvas, 3D, scroll behavior, cursor, transitions), not just its sections. Follow the capture depth in `references/research.md`. A reference that was not opened and photographed is not kept. Do not stop to show the user a list of references and wait for reactions.
 3. **One proposal.** Present three complete packages in a single message so the user answers once. Each package differs strongly from the others (not color variations) and bundles:
    - a name and the concept source (a material, culture, object, or place from the idea itself)
    - the format (2D, 3D, or hybrid) with what it feels like and costs
    - the palette and fonts, each with a reason
    - the lead element
+   - the signature elements (loader, canvas or 3D scene, scroll behavior, cursor, transitions), each with the reference it comes from
    - the section plan: an ordered list, each section naming the reference (with its live site URL) and the section it is adapted from, and flagging any cost or risk. Every package uses every kept reference, assigned differently (for example hero from site A, proof from site C), so the page is a real combination
 
    Mark one package as recommended, with a reason. The user replies with a pick, a mix ("package 2, but the hero from package 1"), or a change. This is the step most often skipped, and skipping it means the agent chose the identity alone.
@@ -57,7 +60,7 @@ If the user asks to audit or review a page instead of building one, follow `refe
 
 - Pair every ban with a positive direction. Banning Inter and purple gradients alone sends the model to cream with terracotta, or black with one neon accent.
 - Every common visual choice (gradient, glow, blur, shadow, cards, icons, popular fonts) gets a one-sentence reason. If the only reason is "it is usual", replace it.
-- References may be followed closely. Layout, section order, composition, and motion can be adapted from a reference (the user approved this), but the result must not be identical to its source, and no assets are taken: no logos, photos, illustrations, videos, or 3D models. Text is written for this product and code is written fresh. Never present another site's name or brand marks as this site's.
+- Method: Amati, Tiru, Modifikasi, plus the user's khayal. Imitating a reference closely is the starting point, and the user prefers it: follow its layout, section order, composition, type scale, rhythm, motion, and signature elements. Then modify: every section changes in at least two named ways, and at least one change comes from the user's own idea (their words in `BRIEF.md` or the chosen concept) so the result is theirs. The result must not be identical to its source, and no assets are taken: no logos, photos, illustrations, videos, or 3D models. Text is written for this product and code is written fresh. Never present another site's name or brand marks as this site's.
 - Palette: 2-3 core colors plus 1 accent. The accent appears only at key moments.
 - Section order follows the product's content, not a template. No testimonials section without real testimonials, no fake logo bar, no numbers without a source.
 - Missing content is marked with an honest placeholder (`[REAL DATA]`, "Coming soon"), never dressed up as real.
@@ -66,6 +69,7 @@ If the user asks to audit or review a page instead of building one, follow `refe
 - Text contrast meets WCAG AA (4.5:1, or 3:1 for large text). Keyboard focus is always visible.
 - Responsive down to 360px with no horizontal scroll and touch targets of at least 44px.
 - 3D never carries the content alone: text, links, and buttons stay real HTML, and the page works without WebGL.
+- Screenshots are mandatory for every reference. If you have a screenshot tool, use it, and never describe a site you did not see.
 - For 3D, follow `references/3d-craft.md`: real geometry where the user expects 3D, effects attached to their object, sparse effects, one plan for many instances, and a loader that waits for the real scenes.
 
 ## When the user only wants a prompt
