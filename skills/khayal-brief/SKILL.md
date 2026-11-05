@@ -5,30 +5,27 @@ description: Turns a vague idea in the user's imagination into a clear brief for
 
 # khayal-brief
 
-The user has something in their head and cannot yet say it precisely. Your job is to draw it out and write it down, not to invent it.
+The user has something in their head and cannot yet say it precisely. Your job is to draw it out and write it down, not to invent it. Keep it light: the user tells the idea once, and you ask only for what is truly missing.
 
-Reply in the user's language. Write `BRIEF.md` in the language the user used for their answers.
+Reply in the user's language. Write `BRIEF.md` in the language the user used.
 
 ## Rules
 
-- Ask one question at a time, at most six in total. Skip any question the user has already answered.
-- Never fill in an answer the user did not give. Mark it `[UNDECIDED]` instead.
+- Let the user tell the idea freely first. That is the main input, so do not start with a questionnaire.
+- Ask only for what is missing and cannot be inferred, and put every question in one message, at most three. Skip anything the user already said.
+- Never fill in an answer the user did not give. Mark it `[UNDECIDED]` instead. Feeling, the distinctive thing, and references are often best left `[UNDECIDED]`: the research in `khayal-web` proposes options for them.
 - Never invent facts about the product: names, numbers, customers, features, dates, claims.
 - Keep the user's own words. Quote them in the brief instead of paraphrasing them into marketing language.
-- Do not start designing or building until the user confirms the summary.
+- Do not design or build in this skill.
 
 ## Interview
 
-Start by letting the user describe the idea freely. Then ask, only as needed:
-
-1. Who is this for?
-2. What should someone feel in the first ten seconds?
-3. What is the one thing only this idea has?
-4. What single action should the visitor or viewer take?
-5. What do you need: a website, a video, or both? Any constraints (stack, deadline, language, existing brand)?
-6. Optional: is there anything you like as a reference, and what exactly do you like about it?
-
-If the user answers "I don't know" to a question, offer two or three concrete options to react to, and let them pick or reject.
+1. Ask the user to describe the idea freely, in their own words.
+2. If these essentials are still missing, ask them together in one message:
+   - What is it, and who is it for?
+   - What single action should the visitor or viewer take?
+   - Is it a website, a video, or both, and are there constraints (stack, deadline, language, existing brand)?
+3. If the user answers "I don't know" to anything, mark it `[UNDECIDED]` and move on. Do not stop to offer options. The options come from `khayal-web` after research.
 
 ## Output: BRIEF.md
 
@@ -36,29 +33,16 @@ Write the file in the project root with these sections, using the user's words w
 
 - **Idea:** the user's own description.
 - **Audience**
-- **Feeling:** what the viewer should feel.
-- **Distinctive thing**
+- **Feeling:** what the viewer should feel, if the user said.
+- **Distinctive thing:** if the user said.
 - **Primary action**
 - **Deliverables:** website, video, or both, plus constraints.
-- **References:** what and why.
+- **References:** anything the user volunteered, and what they like about it.
 - **Open questions:** everything still `[UNDECIDED]`.
 
-Read the brief back in a few lines and ask the user to correct it.
-
-## Three directions
-
-Once the brief is confirmed, offer three directions that differ strongly from each other, not three color variations. For each give:
-
-- a name
-- the concept source: a material, culture, object, or place that comes from the idea itself
-- the mood in one sentence
-- a palette (2-3 core colors and 1 accent, with roles)
-- display and text fonts, each with a reason
-- the lead element (the first thing a visitor sees)
-- if a video is wanted: one line about the opening shot
-
-Do not choose for the user. Wait for them to pick one, or to mix parts of two.
+Show the brief back in a few lines in the same message as the handoff, so the user can correct it. Their correction can come with their pick in the next step, so do not wait for a separate confirmation.
 
 ## Handoff
 
-After the user chooses, continue with `khayal-web`, which turns the brief and the chosen direction into `DESIGN.md` for the whole project and then builds the website. This plugin does not yet include a video skill. If a video is wanted, record it in the brief and tell the user that `DESIGN.md` is written so a video tool (for example Remotion, which uses the same React and CSS) can reuse the same colors, fonts, and motion language.
+- **Website, or website and video:** continue with `khayal-web`. It researches award-level references and offers three complete options in one message, then writes `DESIGN.md` and `LAYOUT.md` from the one the user picks and builds.
+- **Video only:** this plugin does not yet include a video skill. Record it in the brief and tell the user. `DESIGN.md` is written so a video tool (for example Remotion, which uses the same React and CSS) can reuse the same colors, fonts, and motion language.

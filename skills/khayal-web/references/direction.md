@@ -12,10 +12,10 @@ If a `BRIEF.md` exists (from `khayal-brief`), read it first and build on it. Do 
 
 ## Steps
 
-1. Collect: product, audience, one primary action, the most distinctive thing, and the mood. One deciding question is enough if something is missing. Also read the chosen format (2D, 3D, or hybrid, see `web-type.md`) and `REFERENCES.md` if research has been done.
+1. Collect: product, audience, one primary action, the most distinctive thing, and the mood. One deciding question is enough if something is missing. Also read the chosen format (2D, 3D, or hybrid, see `web-type.md`) and `REFERENCES.md` and `LAYOUT.md` if they exist.
 2. Find the visual source in the product itself: a material, culture, object, place, or way of working. Example: a page about corrections uses exam paper, ballpoint ink, and a teacher's red pen. "Modern and clean" is not a concept. References from research inform this step but do not replace it.
-3. Offer three directions that differ strongly (not three color variations), each with a concept, palette, fonts, lead element, and where the 2D or 3D weight sits.
-4. After the user picks one, write `DESIGN.md` with the structure below.
+3. Use the direction from the package the user chose (see `SKILL.md`). Only if no package was offered, give three directions that differ strongly (not three color variations), each with a concept, palette, fonts, lead element, and where the 2D or 3D weight sits, and wait for a pick.
+4. Write `DESIGN.md` with the structure below. Do not ask again about choices the user already made.
 
 ## DESIGN.md structure
 

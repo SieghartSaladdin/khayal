@@ -40,6 +40,16 @@ Reply in the user's language.
 - A tall `sticky` element covers content on small screens. Use sticky only when both width and height can hold it (`min-width` and `min-height` media queries), and on narrow screens scroll to the result after an action.
 - Entry animation built on `opacity:0` depends on the animation running. A screenshot taken too early, or a hidden tab, can show a blank page. Make sure there is a way out if the animation does not run, and wait before judging from a screenshot.
 
+## Cart and checkout demo flows
+
+When a site shows products with a cart, even as a demo:
+
+- Build the whole flow the user described: add to cart, quantity change, remove, totals, a checkout dialog with a shipping form and validation, and an order confirmation. A cart that cannot check out is a broken promise.
+- Mark it as a demo. Sample products are labeled as dummy data, the confirmation says it is a sample order, and no payment or personal data is sent anywhere.
+- Use enough sample items to show the layout under real load, all with the same treatment.
+- The dialog uses `dialog` or `role="dialog"` with a label, traps focus, closes on Escape, and returns focus to what opened it. The cart count is announced through a live region.
+- Keep cart state across a reload only if you say so (`localStorage` inside try/catch).
+
 ## Test checklist
 
 Run in a real browser, not just by reading code:

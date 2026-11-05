@@ -18,9 +18,12 @@ Format: [2D, 3D, or hybrid] and purpose [landing page, showcase, story, product 
 Stack: [plain HTML/CSS/JS, GSAP, Three.js]. Pin versions: [for example GSAP 3.12.x, Three.js rXXX].
 
 REFERENCES (research first, save as REFERENCES.md)
-Find 3-5 Awwwards winners and competitors for [theme]. For each, note palette, typography,
-layout, motion, the unique element, and one pattern to borrow. Only list sites you found,
-with URLs. Show them to me and wait for my reaction before offering directions.
+Find 3-5 Awwwards winners and competitors for [theme]. Follow each Awwwards entry to its live
+site and open the live site. For each, note palette, typography, layout, every section in
+order, motion, the unique element, and the sections worth adapting. Only list sites you
+actually opened, with both the Awwwards URL and the live URL. Use sections from every one.
+Then offer three complete packages in one message (direction, format, and a
+section plan adapted from those references) and wait for my pick.
 
 DESIGN DIRECTION (write it first, save it as DESIGN.md)
 - Concept: [the material or culture the visuals come from, not "modern and clean"]
