@@ -61,4 +61,4 @@ Drop or reorder sections the product does not need. The order follows the story,
 
 ## Output format
 
-A single HTML file with CSS custom properties and vanilla JS is fine for a 2D landing page. For hybrid or 3D, state the setup you chose (for example ES modules from a CDN import map, or a small Vite project) and why. Either way the page is mobile-first, has scroll-triggered effects with `IntersectionObserver` where they help, and follows `interaction.md`.
+A single HTML file with CSS custom properties and vanilla JS is the default for a 2D landing page. For hybrid or 3D, stay in plain HTML, CSS, and JS and load libraries such as Three.js as ES modules from a CDN import map, and state the setup you chose and why. Use a framework or build tool such as Vite only if the user asked for it. Either way the page is mobile-first, has scroll-triggered effects with `IntersectionObserver` where they help, and follows `interaction.md`.

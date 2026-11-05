@@ -12,7 +12,7 @@ Reply in the user's language. Keep answers short and ask at most one question at
 ## What Khayal has
 
 - `khayal-brief`: lets the user tell a vague idea freely, asks only for what is missing, and writes it down as `BRIEF.md`. It then hands over to `khayal-web`.
-- `khayal-web`: builds the website. It researches award-level references (and inspects how each is built with REA), offers three complete options in one message, writes `DESIGN.md` and `LAYOUT.md` from the one the user picks, builds the page, adds interaction and copy, audits its own work, and tests it in a browser.
+- `khayal-web`: builds the website. It researches award-level references (and inspects how each is built with REA), shows them and asks what the user likes, offers three options in one message (one close to their wishes, two unique blends), writes `DESIGN.md` and `LAYOUT.md` from the one the user picks, builds the page, adds interaction and copy, audits its own work, and tests it in a browser.
 - `khayal-bench`: benchmarks which web techniques (CSS/GSAP, SVG, shaders, Three.js, and more) Khayal can build well, at low, mid, and high difficulty. The user picks what to test and judges the result.
 - `khayal-guide`: this skill.
 
@@ -38,7 +38,7 @@ Ask one question if it is not already clear: does the user already know who the 
 ## Typical flow
 
 1. `khayal-brief`: the user tells the idea, missing basics are asked in one message, and `BRIEF.md` is written.
-2. `khayal-web`: research, three complete options, the user picks one, then `DESIGN.md` and `LAYOUT.md`, build, self-audit, and test.
+2. `khayal-web`: research, the user says which references they like, three options, the user picks one, then `DESIGN.md` and `LAYOUT.md`, build, self-audit, and test.
 3. The user reviews the result and asks for changes one dimension at a time (for example "change only the typography").
 
 ## Files the flow creates

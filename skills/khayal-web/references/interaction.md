@@ -14,10 +14,9 @@ Reply in the user's language.
 
 ## Choosing a stack
 
-- Start with plain HTML, CSS, and JS. State stack limits at the start.
-- GSAP with ScrollTrigger for scroll-linked animation: `scrub` ties progress to scroll position (a number adds smoothing lag), `pin` holds an element for a range of scroll.
-- Three.js when the user chose 3D or hybrid (see `web-type.md` for the fit test and the rules on fallback, load budget, and frame rate). GSAP can drive Three.js object properties through `onUpdate`.
-- Smooth scroll (for example Lenis) is optional and must stay keyboard navigable.
+- **Default: plain HTML, CSS, and JS, with no build step.** Use this unless the user asked for something else. If `BRIEF.md` or the user's message names a stack (React, Next.js, Vue, Tailwind, Vite, and so on), use that instead.
+- Frameworks and build tools (React, Next.js, Vue, Tailwind, Vite, and similar) are used only when the user asks for them. Do not add one on your own.
+- Effect libraries are allowed on top of the default, loaded from a CDN or a local file, but name each one in the proposal (step 3) so the user can say no: GSAP with ScrollTrigger for scroll-linked animation (`scrub` ties progress to scroll position, a number adds smoothing lag, `pin` holds an element for a range of scroll), Three.js for 3D or hybrid (see `web-type.md` for the fit test and the rules on fallback, load budget, and frame rate; GSAP can drive Three.js object properties through `onUpdate`), and smooth scroll such as Lenis, which must stay keyboard navigable. If the user declines a library, build the effect with plain CSS and JS, or drop it and say so.
 - Animate `transform` and `opacity` only. Drive cursor effects with `requestAnimationFrame` and disable them on touch devices.
 
 ## Required

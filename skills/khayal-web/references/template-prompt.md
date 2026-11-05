@@ -25,8 +25,10 @@ order, motion, the unique element, and the sections worth adapting. Only list si
 actually opened, with both the Awwwards URL and the live URL. Use sections from every one. Observe each one with REA (Reverse Engineer Anything, required), and also record the
 loader, canvas or 3D, scroll behavior, cursor, and transitions and how they are built,
 not just the sections. Mark anything REA could not confirm.
-Then offer three complete packages in one message (direction, format, and a
-section plan adapted from those references) and wait for my pick.
+Show me the research first and ask which references I like. Then offer three
+packages in one message (direction, format, and a section plan adapted from those
+references): one close to what I like, and two unique blends of the references
+converted to fit my product. Wait for my pick.
 
 DESIGN DIRECTION (write it first, save it as DESIGN.md)
 - Concept: [the material or culture the visuals come from, not "modern and clean"]

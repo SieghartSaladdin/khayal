@@ -53,7 +53,6 @@ Record the decision in `DESIGN.md` under Format.
 - **Mobile.** Simplify or reduce the scene at narrow widths. Test at 375px. Do not rely on hover or on drag gestures that fight page scroll.
 - **Scroll.** Keep native scroll. Drive the camera or scene from scroll position (for example GSAP ScrollTrigger with `scrub`) instead of hijacking the wheel.
 - **Camera controls.** Orbit or drag is optional. No content is reachable only through dragging, and a keyboard path exists for anything interactive.
-- **Assets are honest.** Use procedural geometry, models the user provided, or properly licensed models with the license noted. Do not model a real branded product from imagination. Label placeholders clearly.
 - **Realism and consistency.** See `3d-craft.md` for real geometry versus 2D tricks, effects attached to their object, effect density, many 3D objects on one page, and overlap checks.
 - **Lighting and color follow `DESIGN.md`.** A default grey studio render with a bloom glow is the 3D version of a purple gradient. Give the scene a concept: a material, a place, a light source with a reason.
 
