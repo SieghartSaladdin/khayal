@@ -9,7 +9,7 @@ Reply in the user's language. Write `LAYOUT.md` in English.
 The method is Amati (observe), Tiru (imitate), Modifikasi (modify), plus the user's khayal (imagination). The user prefers starting from a close copy and then modifying it, and has approved close adaptation of a reference's design. So the section order, composition, proportions, type scale, rhythm, and motion behavior of a reference may be followed closely. Two limits stay:
 
 - **Not identical, and partly the user's.** The result must differ from its source, and at least one change per section comes from the user's own idea. Each section changes in at least two named ways beyond the content (for example different proportions, a different alignment, a different order inside the section, an element from this product's concept, or the palette and fonts from `DESIGN.md`).
-- **No assets are taken.** Do not copy a reference's logos, photos, illustrations, videos, or 3D models. Use the product's own assets, procedural shapes, or labeled placeholders. Page text is written for this product, and code is written fresh, not copied.
+- **Assets, text, and code are the user's call.** Design, layout, and signature elements may be imitated freely. A reference's actual logos, photos, illustrations, videos, 3D models, copy, and source code are reused only when the user confirms they own them or are licensed to use them. Otherwise use the product's own assets, procedural shapes, or labeled placeholders, and write the text for this product.
 
 Never use a reference's name, logo, or other brand marks as if they were this site's.
 
@@ -36,7 +36,7 @@ For each section, in page order:
 - **Modify:** at least two named changes, at least one coming from the user's imagination (their words in the brief or the chosen concept)
 - **Content needed:** text, data, and assets, with placeholders where the user has not provided them
 
-Also list the **signature elements** the page will have (loader, canvas or 3D scene, scroll behavior, cursor, transitions). For each: its source reference and live URL, what it does, how it is adapted without taking assets (for example a procedural 3D shape instead of the reference's model), and its cost on load and on mobile. A page built only from standard sections is not enough when the references rely on these.
+Also list the **signature elements** the page will have (loader, canvas or 3D scene, scroll behavior, cursor, transitions). For each: its source reference and live URL, what it does, how it is adapted (for example a procedural 3D shape in place of the reference's model, unless the user has the rights to reuse that model), and its cost on load and on mobile. A page built only from standard sections is not enough when the references rely on these.
 
 Add a short **Notes** section for anything in a reference that could not be confirmed (`not confirmed`), so it is not presented as fact.
 

@@ -62,13 +62,13 @@ For Full detail, and for any site that looks like it uses canvas or heavy animat
 })
 ```
 
-Treat the result as a hint, because minified builds hide library names. Record what you could and could not confirm. This tells you how a site is built; it does not license copying its code or assets.
+Treat the result as a hint, because minified builds hide library names. Record what you could and could not confirm. This tells you how a site is built. Reusing its code or assets needs the user's confirmation that they have the rights (see `SKILL.md`).
 
 ## Rules
 
 - **Do not invent.** Only list sites you actually found. State an award (Site of the Day, Developer Award, year) only if you saw it on a page. Otherwise write `award: unverified`.
 - **Cite every reference with both URLs:** the Awwwards page and the live site. A reference with only the Awwwards URL is not finished.
-- **Close adaptation, not an identical copy.** The user has approved following a reference's layout, section order, composition, and motion closely, as long as the result is not identical and no assets are taken (logos, photos, illustrations, videos, 3D models). Write why each adopted idea fits this product. `layout-blueprint.md` turns this into a section-by-section plan.
+- **Close adaptation, not an identical copy.** The user has approved following a reference's layout, section order, composition, and motion closely, as long as the result is not identical. Reusing a reference's actual assets, text, or code is a separate matter and needs the user's confirmation that they have the rights (see `SKILL.md`). Write why each adopted idea fits this product. `layout-blueprint.md` turns this into a section-by-section plan.
 - **Winners are not automatically right.** Many award winners are heavy, slow, or hard to use. Note the cost of each idea (load, mobile, accessibility, conversion) so the user can weigh it.
 - **User first.** If the user's own imagination and the research disagree, present both and let them choose.
 - **No web access.** Say so, and ask the user for two or three references they know (names or URLs) and what they like about each. Continue from those. Do not fill the gap from memory.

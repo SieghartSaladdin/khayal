@@ -31,7 +31,6 @@ Reply in the user's language.
 
 ## Model real objects from references
 
-- For a real-world object, get reference photos from the user or from licensed sources. Use them only as reference for proportions and parts. Do not copy their textures or images into the site as assets.
 - Keep a short note of which proportions are estimated, and tell the user.
 
 ## Many 3D objects on one page
