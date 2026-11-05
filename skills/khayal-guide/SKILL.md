@@ -12,11 +12,19 @@ Reply in the user's language. Keep answers short and ask at most one question at
 ## What Khayal has
 
 - `khayal-brief`: lets the user tell a vague idea freely, asks only for what is missing, and writes it down as `BRIEF.md`. It then hands over to `khayal-web`.
-- `khayal-web`: builds the website. It researches award-level references, offers three complete options in one message, writes `DESIGN.md` and `LAYOUT.md` from the one the user picks, builds the page, adds interaction and copy, audits its own work, and tests it in a browser.
+- `khayal-web`: builds the website. It researches award-level references (and inspects how each is built with REA), offers three complete options in one message, writes `DESIGN.md` and `LAYOUT.md` from the one the user picks, builds the page, adds interaction and copy, audits its own work, and tests it in a browser.
 - `khayal-bench`: benchmarks which web techniques (CSS/GSAP, SVG, shaders, Three.js, and more) Khayal can build well, at low, mid, and high difficulty. The user picks what to test and judges the result.
 - `khayal-guide`: this skill.
 
 `khayal-web` keeps its detailed guidance in reference files (design direction, interaction, copy, audit, slop tells, prompt template) and loads them when needed. They are not separate skills.
+
+## Requirement: REA
+
+Khayal requires REA (Reverse Engineer Anything, https://github.com/morluto/rea), an MCP server that inspects how a live reference site is built (libraries, canvas, scroll and transition machinery). `khayal-web` checks for it before research and stops if it is missing. Check for REA's tools when the user first asks for help. If they are missing, guide the user through installing REA before anything else, following the preflight in `skills/khayal-web/references/rea.md` (check Node.js, offer to run the setup for them after an explicit yes, remind them to restart the agent, then check again). The options:
+
+- Claude Code: `/plugin marketplace add morluto/rea`, then `/plugin install rea@rea`, then restart.
+- Any supported agent: `npx rea-agents setup`, approve the changes, then restart the agent.
+- Needs Node.js (22.x, 24.x, or 26.12.1+) and a Chrome-family browser.
 
 ## Where to start
 

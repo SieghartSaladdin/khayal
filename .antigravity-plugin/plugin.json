@@ -3,8 +3,8 @@
   "name": "khayal",
   "displayName": "Khayal",
   "version": "0.3.0",
-  "description": "Turn a user's imagination into a distinctive, interactive website that does not look like generic AI output. Four skills: guide, brief, web building, and a technique benchmark. Video skill planned.",
-  "keywords": ["anti-slop", "frontend", "web-design", "interactive", "brief", "guide"],
+  "description": "Turn a user's imagination into a distinctive, interactive website that does not look like generic AI output. Four skills: guide, brief, web building, and a technique benchmark. Video skill planned. Requires the REA (Reverse Engineer Anything) MCP server to study how reference sites are built.",
+  "keywords": ["anti-slop", "frontend", "web-design", "interactive", "brief", "guide", "reverse-engineering", "rea"],
   "suggestedPrompts": [
     "I have an idea for a website, help me turn it into a brief",
     "Audit this page for signs of generic AI design",

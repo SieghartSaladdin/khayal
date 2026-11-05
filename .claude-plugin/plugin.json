@@ -4,7 +4,7 @@
   "version": "0.3.0",
   "license": "MIT",
   "repository": "https://github.com/SieghartSaladdin/khayal",
-  "description": "Turn a user's imagination into a distinctive, interactive website that does not look like generic AI output. Four skills: guide, brief, web building, and a technique benchmark. Video skill planned.",
-  "keywords": ["anti-slop", "frontend", "web-design", "interactive", "brief", "guide"],
+  "description": "Turn a user's imagination into a distinctive, interactive website that does not look like generic AI output. Four skills: guide, brief, web building, and a technique benchmark. Video skill planned. Requires the REA (Reverse Engineer Anything) MCP server to study how reference sites are built.",
+  "keywords": ["anti-slop", "frontend", "web-design", "interactive", "brief", "guide", "reverse-engineering", "rea"],
   "skills": ["./skills/"]
 }

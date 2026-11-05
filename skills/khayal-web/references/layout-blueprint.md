@@ -6,7 +6,7 @@ Reply in the user's language. Write `LAYOUT.md` in English.
 
 ## What may be taken from a reference
 
-The method is Amati (observe), Tiru (imitate), Modifikasi (modify), plus the user's khayal (imagination). The user prefers starting from a close copy and then modifying it, and has approved close adaptation of a reference's design. So the section order, composition, proportions, type scale, rhythm, and motion behavior of a reference may be followed closely. Two limits stay:
+The method is Amati (observe, done with REA), Tiru (imitate), Modifikasi (modify), plus the user's khayal (imagination). The user prefers starting from a close copy and then modifying it, and has approved close adaptation of a reference's design. So the section order, composition, proportions, type scale, rhythm, and motion behavior of a reference may be followed closely. Two limits stay:
 
 - **Not identical, and partly the user's.** The result must differ from its source, and at least one change per section comes from the user's own idea. Each section changes in at least two named ways beyond the content (for example different proportions, a different alignment, a different order inside the section, an element from this product's concept, or the palette and fonts from `DESIGN.md`).
 - **Assets, text, and code are the user's call.** Design, layout, and signature elements may be imitated freely. A reference's actual logos, photos, illustrations, videos, 3D models, copy, and source code are reused only when the user confirms they own them or are licensed to use them. Otherwise use the product's own assets, procedural shapes, or labeled placeholders, and write the text for this product.
