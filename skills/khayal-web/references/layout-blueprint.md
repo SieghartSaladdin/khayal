@@ -14,7 +14,7 @@ Never use a reference's name, logo, or other brand marks as if they were this si
 
 ## When to run it
 
-Workflow step 4 (Lock), once the user has picked a package, and before writing `DESIGN.md`. It needs `REFERENCES.md` with a section map for each reference (see `research.md`), and the format from `web-type.md`.
+Workflow step 4 (Lock), once the user has picked a package, and before writing `DESIGN.md`. It needs `REFERENCES.md` with a section map for each reference (see `research.md`), the Tiru blueprint of every reference the package names (`tiru-capture.md`), and the format from `web-type.md`.
 
 ## Steps
 
@@ -31,7 +31,7 @@ For each section, in page order:
 - **Source:** the reference (name and live URL) and the section it is adapted from, or `original`
 - **Composition:** grid or layout, proportions, alignment, density, relative type scale
 - **Motion and scroll:** what moves, what scroll does here, and the reduced-motion version
-- **Imitate:** what is followed closely from the source
+- **Imitate:** what is followed closely from the source, written as the measured values from its Tiru blueprint (`tiru-capture.md`): grid proportions, section padding, type sizes and line heights, spacing, and motion duration and easing. No "similar to"; a section without numbers is not ready to build
 - **Modify:** the changes the user's imagination asks for (text, design, or both), taken from their words in the brief or the chosen concept, or `none` when the user wants it identical
 - **Content needed:** text, data, and assets, with placeholders where the user has not provided them
 

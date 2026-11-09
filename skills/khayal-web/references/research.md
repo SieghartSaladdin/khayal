@@ -42,6 +42,8 @@ Deep observation takes a long time, so the first pass is a simple style survey, 
 
 **Deep** means everything in Light plus `analyze_web_bundle` (libraries, routes) and the tracing tools in `rea.md` (`trace_web_module_imports`, `inspect_web_event_listeners`, `observe_web_execution`, `observe_web_session`) to find which module drives each loader, canvas scene, scroll animation, transition, and cursor, and the inner pages the user asks about. Say that it takes longer.
 
+Neither Light nor Deep is enough to imitate a reference. Once the user picks a package, the Tiru capture (`tiru-capture.md`) runs on every reference that package names and records measured values in a **Tiru blueprint** inside `REFERENCES.md`. That is automatic and needs no request from the user.
+
 The user decides after looking at the research, at the check-in in `SKILL.md` step 2. Their reply can include "go deep on site B" or "go deep on all". Then run Deep on those sites before building the proposal. If they never ask, build from the Light survey and mark anything about how a site is built as `guess`.
 
 ## Signature elements, not just sections

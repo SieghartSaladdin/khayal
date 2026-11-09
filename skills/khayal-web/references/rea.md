@@ -52,6 +52,10 @@ Read each tool's input schema before calling it, and keep what REA returns as ev
 
 Every kept reference gets at least `inspect_web_page` on its landing page, at every depth including Light. Light is only a style survey (fonts, layout, section order, palette). `analyze_web_bundle` and the tracing tools above belong to Deep, and run only when the user asks for it. A reference with no REA evidence is not kept.
 
+## Second level: Tiru capture
+
+Light and Deep research are for choosing and understanding references. Imitating one needs measured numbers, which neither gives. After the user picks a package, every reference it names gets the Tiru capture in `tiru-capture.md`: `capture_browser_scenario` to walk the page at 1440 and 390px with motion on, the real stylesheets and scripts for tokens and animation values, and read-only measurements in the attached browser where REA cannot show a computed value. `inspect_web_page` alone is passive and cannot do this.
+
 ## What REA evidence feeds
 
 - The **Signature elements** and **Dimension** fields of `REFERENCES.md`: libraries and canvas use confirmed by REA are marked `confirmed (REA)`, guesses are marked `guess`.

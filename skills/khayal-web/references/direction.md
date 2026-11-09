@@ -35,6 +35,7 @@ If a `BRIEF.md` exists (from `khayal-brief`), read it first and build on it. Do 
 
 ## Choice rules
 
+- **Liked references win over generic taste.** For a reference the user liked, take the palette, the type scale, the easing, and the fonts from its Tiru blueprint (`tiru-capture.md`) unless the user's own idea asks for a change. If its font is commercial or custom, use the closest free font and say so. The rules below (extreme contrast, size jumps, a concept from the product) apply to what the references do not decide, and never override a measured reference value in a section the user wants imitated.
 - Do not pick Inter, Roboto, Arial, system fonts, or Space Grotesk without a reason that comes from the product. Models keep returning to Space Grotesk once Inter is banned, so name it too.
 - After the classic bans (purple gradients, Inter), check two automatic escapes: cream with a terracotta accent, and black with one neon accent. Use them only if the concept truly demands them.
 - Choose a light or dark theme from the product and audience. If there is no strong reason for one theme, ship a working toggle for both.
