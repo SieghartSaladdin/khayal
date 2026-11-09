@@ -2,7 +2,7 @@
   "$schema": "https://antigravity.google/schemas/v1/plugin.json",
   "name": "khayal",
   "displayName": "Khayal",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Turn a user's imagination into a distinctive, interactive website that does not look like generic AI output. Four skills: guide, brief, web building, and a technique benchmark. Video skill planned. Requires the REA (Reverse Engineer Anything) MCP server to study how reference sites are built.",
   "keywords": ["anti-slop", "frontend", "web-design", "interactive", "brief", "guide", "reverse-engineering", "rea"],
   "suggestedPrompts": [

@@ -8,7 +8,7 @@
     {
       "name": "khayal",
       "source": "./",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "description": "Turn a user's imagination into a distinctive, interactive website that does not look like generic AI output."
     }
   ]
